@@ -1,0 +1,21 @@
+
+
+body{
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    color: #005B5B;
+}
+
+.topbuttons{
+    color:#0A3641;
+
+    
+}
+header,
+footer{
+    background-color: #E5F5F5;
+    color: #005B5B;
+}
