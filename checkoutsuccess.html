@@ -4,21 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="checkoutsuccess page. congratulations on you new jacket">
     <link href="css/style.css" rel="stylesheet">
+    <title>Rainydays-checkoutsuccess</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d7dc688ce.js" crossorigin="anonymous"></script>
 </head>
+<body>
     <header>
-        <nav>
-            <a href="about.html" class="cta">About</a>
-            <a href="contact.html" class="cta">Contact</a>
-        </nav>
+        <a href="index.html">
+            <img src="photos/RainyDays_Logo.png" alt="rainydays logo"class="logo">
+        </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="currentpage-navbar">Home</a></li>
+            <li><a href="listofjackets.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>    
     </header>
-    <body>
-        <img src="photos/RainyDays_Logo.png" alt="rainydays logo">
-    </body>
-    <footer>
+    <section class="order-successful">
+        <div class="thank-you-text">
+            <h1>Thank You!</h1>
+            <h2>Your order har been placed.</h2>
+        </div>
+        <div class="checkmark-icon">
+            <i class="fa fa-check-circle"></i>
+        </div>
+        <div class="info-text">
+            <p>You will shortly recieve an order confirmation to your e-mail adress. Your item(s) will be shipped from our storage in 1-2 business days. Please do not hesitate to contact us with any concerns you may have regarding your purchase.</p>
+        </div>
+        <div class="back-to-shopping-button">
+            <a href="listofjackets.html">Back to shopping</a>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="Copywright">
         <p>&copy;2022 Rainydays Ltd. All rights Reserved</p>
-    </footer>
+    </div>
+    <div class="some-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div>
+        <ul class="footer-list">
+            <li><a href="contact.html">Help</a></li>
+            <li><a href="about.html">FAQ</a></li>
+            <li><a href="contact.html">Returns</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>

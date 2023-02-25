@@ -4,21 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Rainydays cart">
     <link href="css/style.css" rel="stylesheet">
+    <title>Rainydays-cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d7dc688ce.js" crossorigin="anonymous"></script>
 </head>
+<body>
     <header>
-        <nav>
-            <a href="about.html" class="cta">About</a>
-            <a href="contact.html" class="cta">Contact</a>
-        </nav>
+        <a href="index.html">
+            <img src="photos/RainyDays_Logo.png" alt="rainydays logo"class="logo">
+        </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="currentpage-navbar">Home</a></li>
+            <li><a href="listofjackets.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>    
     </header>
-    <body>
-        <img src="photos/RainyDays_Logo.png" alt="rainydays logo">
-    </body>
-    <footer>
+    <section class="main-content">
+        <section class="cart-forms">
+            <div class="shoppingcart-box">
+                    <h1 class="container-headers">1. Your shopping Cart</h1>
+                    <div class="cart-product-container">
+                            <img src="photos/RainyDays_Jacket1.png" alt="RainyDays_Jacket1" class="cart-chosenjacket">
+                            <div class="purchase-description">
+                                <h1>Rogaland</h1>
+                                <p>All-weather jacket w/waistband</p>
+                            <table class="total-price">
+                                <tbody>
+                                    <h2 class="order">Order</h2>
+                                    <tr>
+                                        <td colspan="2">Subtotal</td>
+                                        <td>2 000,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="shipping">Shipping</td>
+                                        <td>0,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="order-total">Order Total</td>
+                                        <td class="order-total">2 000,-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                    </div>
+            </div>
+            <div class="shippinginformation-box">
+                <p class="container-headers">2. Your details</p>
+                <form class="shippinginformationforms">
+                <div class="yourinformationform">
+                    <fieldset class="your-information">
+                        <legend class="your-details">Fill in your information</legend>
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Full Name" class="form__input">
+                            <label for="email"></label>
+                            <input type="text" name="email" id="email" placeholder="E-mail address" class="form__input">
+                            <label for="adress"></label>
+                            <input type="text" name="address" id="address"placeholder="Home Address"class="form__input">
+                            <label for="zipcode"></label>
+                            <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" class="form__input">
+                            <label for="State"></label>
+                            <input type="text" name="State" id="State" placeholder="State" class="form__input">
+                            <label for="Country"></label>
+                            <input type="text" name="country" id="country" placeholder="Country" class="form__input">
+                    </fieldset>
+                    <fieldset class="loginfields">
+                        <legend class="login-information">Login</legend>
+                            <label for="Login"></label>
+                            <input type="text" name="login" id="Login" placeholder="E-mail address" class="form__input">
+                            <label for="Password"></label>
+                            <input type="text" name="password" id="password" placeholder="Password" class="form__input">
+                        <a href="cart.html"class="login-btn">Log In</a>
+                    </fieldset>
+                </div>
+            </form>
+            </div>
+            <div class="billinginformation-box">
+                <p class="container-headers">3. Payment details</p>
+                <form class="card-info">
+                    <fieldset class="cardinfo">
+                        <legend class="fillininformation">Fill in your information</legend>
+                        <label for="nameoncard"></label>
+                        <input type="text" name="nameoncard" id="nameoncard"placeholder="Name on card" class="form__input">
+                        <label for="cardnumber"></label>
+                        <input type="numbers" name="cardnumber" id="cardnumber" placeholder="Card number" class="form__input">
+                        <label for="expires"></label>
+                        <input type="numbers" name="expires" id="expires" Placeholder="Expires"class="form__input-expires">
+                        <label for="securitynumber"></label>
+                        <input type="securitynumber" name="securitynumber" id="securitynumber" placeholder="CVC" class="form__input-expires">
+                    </fieldset>
+                    <a href="checkoutsuccess.html"class="purchase-btn">Place order</a>
+                </form>
+            </div>
+        </section> 
+    </section>
+</body>
+<footer>
+    <div class="Copywright">
         <p>&copy;2022 Rainydays Ltd. All rights Reserved</p>
-    </footer>
+    </div>
+    <div class="some-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div>
+        <ul class="footer-list">
+            <li><a href="contact.html">Help</a></li>
+            <li><a href="about.html">FAQ</a></li>
+            <li><a href="contact.html">Returns</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>

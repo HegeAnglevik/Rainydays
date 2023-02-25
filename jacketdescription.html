@@ -4,21 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="description of rainydays jacket">
     <link href="css/style.css" rel="stylesheet">
+    <title>Rainydays-jacketdescription</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d7dc688ce.js" crossorigin="anonymous"></script>
 </head>
+<body>
     <header>
-        <nav>
-            <a href="about.html" class="cta">About</a>
-            <a href="contact.html" class="cta">Contact</a>
-        </nav>
+        <a href="index.html">
+            <img src="photos/RainyDays_Logo.png" alt="rainydays logo"class="logo">
+        </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listofjackets.html" class="currentpage-navbar">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>    
     </header>
-    <body>
-        <img src="photos/RainyDays_Logo.png" alt="rainydays logo">
-    </body>
+    <section class="jacket-description">
+        <container class="picture-of-jacket">
+            <img src="photos/RainyDays_Jacket1.png" alt="Jacket_1" class="chosen-jacket1">
+        </container>
+        <container class="descriptive-text">
+            <h1>Rogaland</h1>
+            <p>2000 NOK</p>
+            <div class="select-size">
+                <select>
+                    <option value="">Select size</option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Large</option>
+                    <option value="">X-Large</option>
+                    <option value="">XX-Large</option>
+                </select>
+            </div>
+            </a>
+            <div class="description">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <a href="cart.html" class="cta-addtocart">
+                <button>Add to cart</button></a>
+        </container>
+    </section>
     <footer>
-        <p>&copy;2022 Rainydays Ltd. All rights Reserved</p>
+        <div class="Copywright">
+            <p>&copy;2022 Rainydays Ltd. All rights Reserved</p>
+        </div>
+        <div class="some-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="contact.html">Help</a></li>
+                <li><a href="about.html">FAQ</a></li>
+                <li><a href="contact.html">Returns</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </footer>
+</body>

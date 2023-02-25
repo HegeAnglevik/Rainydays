@@ -4,33 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rainydays ldt. is a jacket-company that sells very good jackets">
     <link href="css/style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Rainydays-Frontpage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d7dc688ce.js" crossorigin="anonymous"></script>
 </head>
-    <header>
-        <nav>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 <body>
-    <nav>
-        <a href="listofjackets.html" class="topbuttons">Shop Jackets</a>
-    </nav>    
-    <nav>
-        <a href="about.html" class="topbuttons">About Us</a>
-    </nav>
-    <img src="photos/RainyDays_Logo.png" alt="rainydays logo">
-    <h3>NEW</h3>
-    <h1>FALL/WINTER `22</h1>
-    <h3>Lightweight, durable, breathable. 
-        Shop our new range of high- quality jackets, suited for explorers in extreme weather conditions!</h3>
-        <a href="listofjackets.html" class="cta">Shop Now</a>
+    <header>
+            <a href="index.html">
+                <img src="photos/RainyDays_Logo.png" alt="rainydays logo"class="logo">
+            </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">    
+        <nav>
+            <ul>
+                <li><a href="index.html" class="currentpage-navbar">Home</a></li>
+                <li><a href="listofjackets.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>    
+    </header>
+    <section class="index-text">
+        <p>NEW</p>
+        <h1>FALL/WINTER'22</h1>
+        <p>Lightweight, durable, breathable. 
+        Shop our new range of high- quality jackets, suited for explorers in extreme weather conditions!</p>
+    </section>
+    <section class="new-arrivals">
+        <h1 class="header-new-arrivals">NEW ARRIVALS:</h1>
+        <div class="new-jackets-section">
+            <a href="jacketdescription.html">
+                <img src="photos/RainyDays_Jacket1.png" alt="Jacket1">
+                <img src="photos/RainyDays_Jacket2.png" alt="Jacket_2">
+                <img src="photos/RainyDays_Jacket3.png" alt="Jacket_3">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="Copywright">
+            <p>&copy;2022 Rainydays Ltd. All rights Reserved</p>
+        </div>
+        <div class="some-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="contact.html">Help</a></li>
+                <li><a href="about.html">FAQ</a></li>
+                <li><a href="contact.html">Returns</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-<footer>
-    <p>&copy;2022 Rainydays Ltd. All rights Reserved</p>
-</footer>
 </html>
