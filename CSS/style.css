@@ -19,6 +19,8 @@ body{
   font-family: 'nunitosans';
   background-image: url(/photos/iStock-1251331799.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height:100%;
   margin:0px;
   display: flex;
@@ -161,6 +163,7 @@ body{
 .index-text h1{
   font-weight: 800;
   font-size: clamp(3rem,5vw,4rem);
+  margin-right:1em;
 }
 
 .index-text p{
