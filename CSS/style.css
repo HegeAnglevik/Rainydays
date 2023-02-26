@@ -234,12 +234,14 @@ footer{
 .product-grid{
   position: relative;
   display: grid;
+  justify-items: center;
   background: rgba(229, 245, 245, 0.75);
   margin-top:15rem;
   margin-bottom: 5rem;
   margin-left: 2em;
   margin-right: 2em;
   padding-left: 2em;
+  column-gap: 2em;
 
 }
 
@@ -247,6 +249,7 @@ footer{
 .product-grid{
   grid-template-columns: 1fr 1fr;
   padding-left: 4em;
+  column-gap: 2em;
 }
 }
 
@@ -254,18 +257,19 @@ footer{
   .product-grid{
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 12em;
+    column-gap: 2em;
   }
   }
 
 .picture-of-jacket{
   max-width: 300px;
-  min-width: 150px;
+  min-width: 120px;
 }
 
 .second-picture-of-jacket{
   max-width: 270px;
   max-height: 300px;
-  min-width: 150px;
+  min-width: 110px;
   padding-top: 1em;
   padding-bottom: 2.7em;
 }
@@ -284,6 +288,7 @@ footer{
 .product-container-text{
   background-color: #005B5B;
   max-width: 20rem;
+  margin-right: 1em;
   border-radius: 25px;
   padding-right:10px;
   padding-left: 10px;
